@@ -44,8 +44,8 @@ html,body {
     display:flex;
     cursor: pointer;
     margin-top: 25px;
-    margin-left: 0;
-    transform: translateX(-70px);
+    margin-left: 0; 
+    /* transform: translateX(-70px); */
 }
 
 .fa-gem{
@@ -118,7 +118,10 @@ html,body {
         width: 100%;
         max-width: 1300px;
         padding: 0;
-        padding-left: 50px;
+        /* padding-left: 50px; */
+    }
+    #navbar__logo{
+        margin-left:50px;
     }
 
     .navbar__menu{
@@ -143,11 +146,6 @@ html,body {
         z-index: 99;
         height: 50vh;
         font-size: 1.6rem;
-    }
-
-    #navbar__logo{
-        margin-left: 50px;
-    
     }
 
     .navbar__toggle .bar{
@@ -322,7 +320,6 @@ html,body {
         width: 100%;
         margin: 0 auto;
         height: 90vh;
-        padding-left: 50px;
     }
 
     .main__content {
