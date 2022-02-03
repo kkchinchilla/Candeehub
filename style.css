@@ -206,6 +206,7 @@ html,body {
 
 .main {
     background-color: #ffecee;
+    height: auto;
 }
 
 .main__container {
@@ -312,6 +313,11 @@ html,body {
 }
 
 @media screen and (max-width: 768px){
+    .main {
+        height: auto;
+        padding-bottom: 15px;
+    }
+
     .main__container {
         display: grid;
         grid-template-columns: auto;
@@ -319,7 +325,7 @@ html,body {
         justify-self: center;
         width: 100%;
         margin: 0 auto;
-        height: 90vh;
+        height: auto;
     }
 
     .main__content {
@@ -371,7 +377,7 @@ html,body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    height: auto;
 }
 
 .services h1 {
@@ -455,7 +461,7 @@ html,body {
 
 @media screen and (max-width: 960px){
         .services{
-            height: 1400px;
+            height: auto;
         }
 
         .services h1 {
@@ -467,6 +473,45 @@ html,body {
         }
 }
 
+@media screen and (max-width: 360px){
+.services__card {
+    margin: 1rem;
+    height: 315px;
+    width: 240px;
+    border-radius: 10px;
+}
+
+.services h2 {
+    font-size: 2rem;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    line-height: 1;
+}
+
+.services__card p{
+    font-size: 1rem;
+    position: absolute;
+    top: 120px;
+    left:20px;
+}
+
+.services__card button {
+    color:#5C2466;
+    padding: 5px 10px;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    background: #fff9fa;
+    position:absolute;
+    top: 250px;
+    left:20px;
+    font-size: 0.5rem;
+    cursor: pointer;
+}
+}
+
+
 /* Footer */
 
 .footer__container {
@@ -475,6 +520,7 @@ html,body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 .footer__links {
@@ -581,6 +627,18 @@ html,body {
 }
 
 @media screen and (max-width: 480px) {
+    .footer__links--items {
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .footer__links {
+        flex-direction: column;
+    }
+
     .footer__links--items {
         margin: 0;
         padding: 10px;
